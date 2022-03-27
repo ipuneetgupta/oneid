@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "3b2e9f72-336e-4bde-8180-90274591c862",
+		"name": "vw-auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "web1",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"punit\",\n    \"email\": \"puneet@boarded.com\",\n    \"first_name\": \"A\",\n    \"last_name\": \"B\",\n    \"password\": \"punit123\",\n    \"is_active\":true,\n    \"profile\": {\n        \"zip\": \"12345\",\n        \"city\": \"delhi\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{pg}}api/user/register/",
+							"host": [
+								"{{pg}}api"
+							],
+							"path": [
+								"user",
+								"register",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"puneet@boarded.com\",\n    \"password\":\"punit123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{pg}}api/login/?login_challenge=ce0ca2bad0c444c79a20f63dcbf2eab6",
+							"host": [
+								"{{pg}}api"
+							],
+							"path": [
+								"login",
+								""
+							],
+							"query": [
+								{
+									"key": "login_challenge",
+									"value": "ce0ca2bad0c444c79a20f63dcbf2eab6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "loginconsent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{pg}}api/loginconsent/",
+					"host": [
+						"{{pg}}api"
+					],
+					"path": [
+						"loginconsent",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
