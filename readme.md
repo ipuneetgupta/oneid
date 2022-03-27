@@ -1,19 +1,25 @@
-Step1 : git clone https://github.com/ory/hydra.git
-Step 2 : sudo docker-compose -f quickstart.yml \
+- Step1 : git clone https://github.com/ory/hydra.git
+
+- Step 2 : sudo docker-compose -f quickstart.yml \
     -f quickstart-postgres.yml \
     up --build
-Step3 : git clone https://github.com/ipuneetgupta/hydra-openid.git
-Step4 : touch .env
-Step 5 :copy and paste this in .env 
+
+- Step 3 : git clone https://github.com/ipuneetgupta/hydra-openid.git
+
+- Step 4 : touch .env
+
+- Step 5 :copy and paste this in .env 
 
         ADMIN_HYDRA_URL=http://localhost:4445
         PUBLIC_HYDRA_URL=http://localhost:4444
         AUTH_CLIENT_ID=videowiki
         AUTH_CLIENT_SECRET=aFHqO2~Ayz6d81KWs1ha.-6RtP
 
-Step 5 : python3 manage.py makemigration & migrate
-Step 6 : python3 manage.py runserver
-step 7 : please change contrib/quickstart/5-min/hydra.yml 
+- Step 6 : python3 manage.py makemigration & migrate
+
+- Step 7 : python3 manage.py runserver
+
+- step 8 : please change contrib/quickstart/5-min/hydra.yml 
 
        serve:
         cookies:
@@ -38,7 +44,7 @@ step 7 : please change contrib/quickstart/5-min/hydra.yml
             pairwise:
               salt: youReallyNeedToChangeThis
 
-Step 8: Enter this Url in browser
+- Step 9: Enter this Url in browser
     
     http://127.0.0.1:4444/oauth2/auth?audience=&max_age=0&nonce=cbcvurctcddwfhzsnltwyz343&prompt=&redirect_uri=http://127.0.0.1:8000/api/token&response_type=code&scope=openid+offline&state=dsfssfsfsfsfslmksmf&client_id=videowiki
 
