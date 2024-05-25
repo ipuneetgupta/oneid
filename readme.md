@@ -100,6 +100,11 @@ serve:
         salt: youReallyNeedToChangeThis
 ```
 
+Step : 
+```
+Creating an OAuth 2.0 Client
+```
+
 Step 9: Start OneID Authentication
 Open the following URL in your web browser:
 
