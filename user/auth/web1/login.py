@@ -2,7 +2,7 @@ from user.models import User, UserProfile
 from decouple import config
 from django.contrib.auth import authenticate
 
-API_ENDPOINT = config('API_ENDPOINT')
+# API_ENDPOINT = config('API_ENDPOINT')
 
 
 def login(body):

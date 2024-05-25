@@ -1,6 +1,6 @@
 from user.models import User,UserProfile
 from decouple import config
-API_ENDPOINT = config('API_ENDPOINT')
+# API_ENDPOINT = config('API_ENDPOINT')
 
 
 def register(body):

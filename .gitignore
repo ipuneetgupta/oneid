@@ -10,4 +10,4 @@ static/
 **/migrations/**
 !**/migrations
 !**/migrations/__init__.py
-
+hydra

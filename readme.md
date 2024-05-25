@@ -23,7 +23,7 @@ Step 2: Start Hydra
 
 ```bash 
 cd hydra
-sudo docker-compose -f quickstart.yml -f quickstart-postgres.yml up --build
+docker-compose -f quickstart.yml -f quickstart-postgres.yml up --build
 ```
 
 Step 3: Clone OneID Repository
@@ -52,15 +52,24 @@ Save and close the .env file.
 
 Make sure to replace the placeholder values (ADMIN_HYDRA_URL, PUBLIC_HYDRA_URL, AUTH_CLIENT_ID, and AUTH_CLIENT_SECRET) with appropriate and secure values for your specific configuration. These environment variables will be used by the OneID server to interact with the Hydra server for authentication and authorization purposes.
 
+Step : 
+```
+python3
+.10 -m venv venv
+source 
+venv/bin/activate
+pip install -r requirement.txt
+```
 
 Step 6: Apply Database Migrations
 ```
-python3 manage.py makemigrations
-python3 manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
 ```
 
 Step 7: Run the OneID Server
 ```
+python manage.py createsuperuser
 python3 manage.py runserver
 ```
 
