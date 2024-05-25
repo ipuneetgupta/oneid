@@ -29,7 +29,7 @@ sudo docker-compose -f quickstart.yml -f quickstart-postgres.yml up --build
 Step 3: Clone OneID Repository
 
 ```bash 
-git clone https://github.com/ipuneetgupta/hydra-openid.git
+git clone https://github.com/ipuneetgupta/openid.git
 ```
 
 Step 4: Create .env File
