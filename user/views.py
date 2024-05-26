@@ -43,7 +43,7 @@ def login_request(request,pk):
             "remember_for": 3600
         })
         login_request_body['consent_url'] = accepted_request
-        return redirect("http://127.0.0.1:4444/oauth2/auth?audience=&max_age=0&nonce=cbcvurctcddwfhzsnltwyz343&prompt=&redirect_uri=http://127.0.0.1:8000/api/token&response_type=code&scope=openid+offline&state=dsfssfsfsfsfslmksmf&client_id=videowiki")
+        return redirect("http://127.0.0.1:4444/oauth2/auth?audience=&max_age=0&nonce=cbcvurctcddwfhzsnltwyz343&prompt=&redirect_uri=http://127.0.0.1:8000/api/token&response_type=code&scope=openid+offline&state=dsfssfsfsfsfslmksmf&client_id=<client>")
 
 
 

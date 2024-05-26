@@ -44,7 +44,7 @@ Copy and paste the following environment variables into the .env file:
 ```bash
 ADMIN_HYDRA_URL=http://localhost:4445
 PUBLIC_HYDRA_URL=http://localhost:4444
-AUTH_CLIENT_ID=videowiki
+AUTH_CLIENT_ID=client
 AUTH_CLIENT_SECRET=aFHqO2~Ayz6d81KWs1ha.-6RtP
 ```
 
@@ -108,7 +108,7 @@ Creating an OAuth 2.0 Client
 Step 9: Start OneID Authentication
 Open the following URL in your web browser:
 
-`http://127.0.0.1:4444/oauth2/auth?audience=&max_age=0&nonce=cbcvurctcddwfhzsnltwyz343&prompt=&redirect_uri=http://127.0.0.1:8000/api/token&response_type=code&scope=openid+offline&state=dsfssfsfsfsfslmksmf&client_id=videowiki`
+`http://127.0.0.1:4444/oauth2/auth?audience=&max_age=0&nonce=cbcvurctcddwfhzsnltwyz343&prompt=&redirect_uri=http://127.0.0.1:8000/api/token&response_type=code&scope=openid+offline&state=dsfssfsfsfsfslmksmf&client_id=<client>`
 
 ## Usage
 With the OneID server running, your microservices can now authenticate users using the OpenID Connect flow. When users access a protected microservice, they will be redirected to the OneID server for authentication. Once authenticated, they will be redirected back to the microservice with the necessary tokens.

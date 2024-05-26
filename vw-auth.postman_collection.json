@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "3b2e9f72-336e-4bde-8180-90274591c862",
-		"name": "vw-auth",
+		"name": "od-auth",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
